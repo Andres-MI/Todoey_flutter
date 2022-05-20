@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoey_flutter/widgets/task_tile.dart';
 
 class TaskList extends StatelessWidget {
   const TaskList({Key? key,}) : super(key: key);
@@ -7,10 +8,7 @@ class TaskList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (BuildContext context, int index) {
-        return CheckboxListTile(
-            title: const Text('Task number 1'),
-            value: false,
-            onChanged: (bool? value) {});
+        return const TaskTile();
       },
       itemCount: 3,
     );
