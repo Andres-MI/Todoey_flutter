@@ -20,7 +20,7 @@ class TasksScreen extends StatelessWidget {
             builder: (BuildContext context) => SingleChildScrollView(
                 padding: EdgeInsets.only(
                     bottom: MediaQuery.of(context).viewInsets.bottom),
-                child: AddTaskScreen()),
+                child: const AddTaskScreen()),
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20.0),
